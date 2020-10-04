@@ -1,29 +1,36 @@
 "use strict" 
 
 import Swiper, { Navigation, Pagination } from 'swiper';
-// import 'swiper/swiper-bundle.css';
-// configure Swiper to use modules
+
 Swiper.use([Navigation, Pagination]);
 
-// init Swiper:
-const swiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    direction: 'vertical',
-    loop: true,
+const slider = document.getElementById('slider1')
+let mySwiper;
+
+function mobSlider() {
+  if(window.innerWidth <= 768 && slider.dataset.mobile == "false"){
+    mySwiper = new Swiper('.swiper-container', {
+          loop: true,
+          draggable: false,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+        })
+    slider.dataset.mobile = 'true';
+  };
   
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-  })
+
+  if(window.innerWidth > 768){
+    slider.dataset.mobile = 'false';
+
+    if(slider.classList.contains('swiper-container-initialized')){
+      mySwiper.destroy();
+    }
+}}
+
+mobSlider();
+
+window.addEventListener('resize', function(){
+  mobSlider();
+});

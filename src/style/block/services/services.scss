@@ -80,34 +80,10 @@
         }
     }
 
-    .slider{
-        position: relative;
-
-        .slider__wrap{
-            overflow: hidden;
-        }
-
-        .slider__link{
-            z-index: 3;
-            position: absolute;
-            margin: auto;
-            top: 50%;
-            width: 30px;
-            height: 30px;
-            opacity: 0;
-        }
-        .slider__link_left{
-            left: 15px;
-        }
-        .slider__link_right{
-            right: 15px;
-        }
+    .swiper-button-prev,
+    .swiper-button-next{
+        opacity: 0;
     }
 }
 
 
-
-.swiper-container {
-    width: 600px;
-    height: 300px;
-}

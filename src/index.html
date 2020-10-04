@@ -49,26 +49,6 @@
                     <a class="main-link" href="#">Больше о нас</a>
                 </div>
             </section>
-            <!-- Slider main container -->
-            <div class="swiper-container">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    ...
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar"></div>
-            </div>
             <section class="section who-we-are">
                 <div class="container">
                     <h3 class="section-heading">Кто мы такие?</h3>
@@ -141,44 +121,42 @@
                         предложение.
                     </div>
                 </div>
-                <div class="slider" id="slider1">
-                    <a href="#" class="slider__link slider__link_left" data-direction="previous">Prev</a>
-                    <div class="slider__wrap">
-                        <ul class="services__img-items">
-                            <li class="services__img-item">
+                    <div class="swiper-container" id="slider1" data-mobile="false">
+                        <a href="#" class="swiper-button-prev" data-direction="previous"></a>
+                        <ul class="services__img-items swiper-wrapper ">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants1-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
-                            <li class="services__img-item">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants2-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
-                            <li class="services__img-item">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants3-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
-                            <li class="services__img-item">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants4-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
-                            <li class="services__img-item">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants5-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
-                            <li class="services__img-item">
+                            <li class="services__img-item swiper-slide">
                                 <img class="services__img" src="./image/services/Elephants6-min.png"alt="Elephant">
                                 <h5 class="h5-heading">Пламенный привет дизайнеру</h5>
                                 <p class="services__img-text">что забыл отвязать слой</p>
                             </li>
                         </ul>
+                        <a href="#" class="swiper-button-next" data-direction="next"></a>
                     </div>
-                    <a href="#" class="slider__link slider__link_right" data-direction="next">Next</a>
-                </div>
                 <a href="#" class="main-link_green">Хочу на слоновью ферму!</a>
             </section>
             <section class="section how-it-looks">
