@@ -1,0 +1,103 @@
+@media (max-width: 1440px){
+    .container{
+        width: 95%;
+    }
+    .services{
+        .services__img-item{
+            height: 28vh;
+        }
+    }
+
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 15px;
+    }
+
+    .who-we-are .who-we-are__achievements .who-we-are__number{
+        font-size: 100px;
+    } 
+    .who-we-are .who-we-are__achievements .who-we-are__info{
+        font-size: 19px;
+    }
+
+}
+
+@media (max-width: 1024px){
+    
+    
+    .about-us .container{
+        justify-content: space-evenly;
+    }
+    .about-us .about-us__cards{
+        margin: 0;
+    }
+    .blog .container{
+        justify-content: space-evenly;
+    }
+    .contact-us .contact-us__columns{
+        margin: 0;
+    }
+    .contact-us .container{
+        justify-content: space-evenly;
+    }
+}
+
+@media (max-width: 992px){
+    .who-we-are .who-we-are__achievements{
+        height: auto;
+    }
+    .who-we-are .who-we-are__achievements .who-we-are__items{
+        flex-wrap: wrap;
+    }
+    .who-we-are .who-we-are__achievements .who-we-are__item{
+        width: calc(100%/3);
+        padding: 20px 0; 
+    }
+    .who-we-are .who-we-are__achievements .who-we-are__item:nth-child(3n+3)::after{
+        border: none;
+    }
+    .services .services__img-item{
+        height: 20vh;
+        width: calc(100%/2);
+    }
+    .elephants .elephants__text{
+        height: 30vh;
+        padding: 15px;
+        right: -33vh;
+        bottom: -40vh;
+    }
+    .stay-with-us .stay-with-us__input{
+        flex-basis: auto;
+        width: calc(100%/2 - 10px);
+    }
+    .about-us .about-us__card-image{
+        flex-shrink: 0.5;
+    }
+    .footer{
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px){
+
+
+    
+    .services{
+        .services__img-items{
+            flex-wrap: nowrap;
+            
+            .services__img-item{
+                height: 55vh;
+                flex: 0 0 100%;
+            }
+        }
+
+        .slider .slider__link{
+            opacity: 1;
+        }
+    } 
+    
+}

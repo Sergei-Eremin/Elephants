@@ -1,0 +1,35 @@
+.main-header{
+    z-index: 5;
+    height: 63px;
+    background-color: #1a1e22;  
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .container{
+        justify-content: center;
+        align-items: center;
+        max-width: 1365px;
+    }
+    .main-header__logo{
+        margin-right: auto;
+
+        .svg-logo{
+            width: 68px;
+            height: 40px;
+            fill: #88e7a5;
+        }
+    }
+
+    .main-header__items{
+        display: flex;
+        color: #fff;
+        font-size: 20px;
+        max-width: 726px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+}

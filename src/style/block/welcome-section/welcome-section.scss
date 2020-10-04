@@ -1,0 +1,22 @@
+.welcome-section {
+    padding-bottom: 14vh;
+    background-image: url(../../../image/welcome-section/welcome-section-img.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .welcome-section__heading {
+        @extend %white-heading;
+        line-height: 57.54px;
+        max-width: 1142px;
+        text-shadow: 0 8px 32px #152726;
+        font-size: 61px;
+        margin: auto;
+    }
+}

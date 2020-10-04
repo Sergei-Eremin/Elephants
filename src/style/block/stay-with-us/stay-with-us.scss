@@ -1,0 +1,33 @@
+.stay-with-us{
+    padding: 7vh;
+    background-color: #fbfbf7;
+    .container {
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        justify-content: space-evenly;
+    }
+    .stay-with-us__text{
+        max-width: 510px;
+        text-align: center;
+    }
+    .stay-with-us__form{
+        max-width: 710px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        input{
+            outline: none;
+        }
+    }
+    .stay-with-us__input{
+        flex-basis: 343px;
+        max-height: 61px;
+        height: 100%;
+        border: 1px solid #62cc82;
+        font-size: 30PX;
+        padding: 10px;
+    }
+
+}

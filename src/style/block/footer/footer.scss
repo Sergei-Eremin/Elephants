@@ -1,0 +1,24 @@
+.footer{
+    height: 200px;
+    background-color: #3f4943;
+    .container{
+        align-items: center;
+        max-width: 1320px;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    .svg-logo{
+        width: 157px;
+        height: 92px;
+        fill: #fff;
+    }
+    .social-icon{
+        a{
+            width: 64px;
+            height: 64px;
+            &:nth-child(-n+3){
+                margin-right: 10px;
+            }
+        }
+    }
+}

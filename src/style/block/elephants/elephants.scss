@@ -1,0 +1,33 @@
+.elephants{
+    padding-top: 4vh;
+    background-color: #fbfbf7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .section-heading{
+        text-align: center;
+    }
+    .elephants__img{
+        position: relative;
+        & img{
+            max-height: 75vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .elephants__text{
+        max-width: 500px;
+        padding: 60px 60px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: -45vh;
+        bottom: -35vh;
+        margin: auto;
+        max-width: 500px;
+        max-height: 390px;
+        background-color: #fff;
+        box-shadow: 0 37px 51px rgba(119, 119, 99, 0.21);
+    }
+}
