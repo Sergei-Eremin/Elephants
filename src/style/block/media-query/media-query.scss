@@ -82,7 +82,31 @@
 }
 
 @media (max-width: 768px){
+    .main-header{
+        .burger-btn{
+            display: block;
+        }
 
+        .main-header__navigation{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            height: 100%;
+            background-color: #1a1e22;
+        }
+        .main-header__items{
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+            font-size: 40px;
+            .main-header__item{
+                margin-bottom: 50px;
+            }
+        }
+    }
 
     
     .services{

@@ -1,5 +1,5 @@
 .main-header{
-    z-index: 5;
+    z-index: 4;
     height: 63px;
     background-color: #1a1e22;  
     opacity: 0.8;
@@ -22,14 +22,62 @@
             fill: #88e7a5;
         }
     }
-
+    .main-header__navigation{
+        max-width: 726px;
+        width: 100%;
+    }
     .main-header__items{
         display: flex;
         color: #fff;
         font-size: 20px;
-        max-width: 726px;
-        width: 100%;
         justify-content: space-around;
     }
 
+    .burger-btn{
+        display: none;
+        padding: 30px 15px;
+        .burger-btn__icon{
+            display: block;
+            width: 24px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: #fff;
+            position: relative;
+
+            &::before,
+            &::after{
+                display: block;
+                width: 24px;
+                height: 4px;
+                border-radius: 4px;
+                background-color: #fff;
+                position: absolute;
+                content: '';
+                transition: all .2s ease-in;
+            }
+
+            &::before{
+                left: 0;
+                top: -9px;
+            }
+            &::after{
+                left: 0;
+                top: 9px;
+            }
+        }
+
+        &.active-burger{
+            .burger-btn__icon{
+                background-color: transparent;
+            }
+            .burger-btn__icon::before{
+                transform: rotate(45deg);
+                top: 0;
+            }
+            .burger-btn__icon::after{
+                transform: rotate(-45deg);
+                top: 0;
+            }
+        }
+    }
 }
