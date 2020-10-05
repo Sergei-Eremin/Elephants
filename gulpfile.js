@@ -55,7 +55,7 @@ const sassCompilerTask  = function() {
         {dpr: 1,rem: 16,}
         ))
     .pipe(autoprefixer(
-        {cascade: false,}
+        {cascade: false, grid: true,}
     ))
     .pipe(cleanCSS())
     .pipe(sourcemaps.write())

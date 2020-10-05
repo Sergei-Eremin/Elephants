@@ -108,13 +108,12 @@
             height: 100%;
             justify-content: center;
             font-size: 40px;
-            .main-header__item{
-                margin-bottom: 50px;
+            .main-header__link{
+                padding: 35px;
+                display: block;
             }
         }
     }
-
-    
     .services{
         .services__img-items{
             flex-wrap: nowrap;
@@ -132,7 +131,14 @@
         .swiper-button-prev,
         .swiper-button-next{
             opacity: 1;
+            color: #fff;
+            padding: 25px;
         }
     } 
     
+    // .how-it-looks{
+    //     .how-it-looks__items{
+    //         flex-wrap: wrap;
+    //     }
+    // }
 }
