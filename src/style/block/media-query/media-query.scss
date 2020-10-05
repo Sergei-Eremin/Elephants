@@ -135,10 +135,22 @@
             padding: 25px;
         }
     } 
-    
-    // .how-it-looks{
-    //     .how-it-looks__items{
-    //         flex-wrap: wrap;
-    //     }
-    // }
+
+    .how-it-looks{
+        .how-it-looks__items{
+            max-height: 80vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .how-it-looks__item{
+            flex:20%;
+            transition: flex 300ms ease;
+            box-shadow: 0 0 19px 3px #000; margin: 1px;
+
+            &:hover{
+                flex: 0.1 0.1 100vw;
+	            background-size: 100% 100%
+            }
+        }
+    }
 }
