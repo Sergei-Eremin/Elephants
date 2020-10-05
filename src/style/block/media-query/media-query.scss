@@ -88,13 +88,19 @@
         }
 
         .main-header__navigation{
-            display: none;
+            // display: none;
             position: fixed;
             top: 0;
+            transform: translateY(-100%);
             left: 0;
             min-width: 100%;
             height: 100%;
             background-color: #1a1e22;
+            transition: all .3s;
+            overflow: auto;
+        }
+        .main-header__navigation.active{
+            transform: translateY(0);
         }
         .main-header__items{
             flex-direction: column;
